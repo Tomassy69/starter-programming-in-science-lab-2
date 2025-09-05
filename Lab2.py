@@ -9,9 +9,9 @@ def calculate_height(t):
 print("Height of the ball at", t, "second =", calculate_height(t), "meters")
 # Function 2: Calculate the distance traveled by the car
 # This function should take the time t as input and return the distance traveled by the car.
-speed = 20
-time = int(input("Enter time for car (in seconds):"))
+speed = float(20)
+time = float(input("Enter time for car (in seconds):"))
 def calculate_car_distance(time):
-    return speed * time
+    return round(speed * time, 1)
     # TODO: Implement this function
 print("The car will travel", calculate_car_distance(time), "meters in", time, "seconds.")
